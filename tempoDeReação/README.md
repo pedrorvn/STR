@@ -1,4 +1,4 @@
-# Jogo das Bolinhas
+# Tempo de reação com o jogo das bolinhas
 
 ## Objetivo
 
