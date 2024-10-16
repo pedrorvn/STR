@@ -1,0 +1,20 @@
+import matplotlib.pyplot as plt
+tamanhos = [20000, 40000, 60000, 80000, 100000]
+tempos_quick_sort = [2, 4, 8, 10, 14]  
+tempos_bubble_sort = [1446, 6587, 15134, 27266, 42879]  
+
+# Plotar os dados
+plt.figure(figsize=(10, 6))
+plt.plot(tamanhos, tempos_quick_sort, marker='o', label='Quick Sort', color='blue')
+plt.plot(tamanhos, tempos_bubble_sort, marker='o', label='Bubble Sort', color='red')
+
+# Configurações do gráfico
+plt.title('Comparação de Tempos de Execução')
+plt.xlabel('Tamanho do Vetor')
+plt.ylabel('Tempo de Execução (ms)')
+plt.legend()
+plt.grid(True)
+#plt.xscale('log')  # Usar escala logarítmica para o eixo x
+#plt.yscale('log')  # Usar escala logarítmica para o eixo y
+plt.xticks(tamanhos)
+plt.show()
